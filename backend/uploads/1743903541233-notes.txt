@@ -1,0 +1,102 @@
+Session 1 
+
+Components
+
+- The basic building block of React
+
+
+Syntax:
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+const App = () => {
+	return(
+		<p>This is first element</p>
+	)
+}
+
+export default App
+
+Starting react with vite
+
+- npm create vite@latest .
+
+
+
+
+
+Props
+
+<h1>{name}'s To Do List</h1> variable (name)
+
+
+import React from 'react'
+
+const Post = (props) => {
+    const name = props.name;
+    const isExcitedAbout = props.isExcitedAbout;
+    const numLikes = props.numLikes;
+  return (
+    <div>
+        <div className="card">
+            <h3>{name}</h3>
+            <p>{isExcitedAbout}</p>
+            <p>{numLikes} likes</p>
+        </div>
+    </div>
+  )
+}
+
+export default Post
+
+
+
+
+
+Session 2: Building An Interactive Frontend
+
+
+States and Hooks
+
+import { useState } from "react";
+
+export default function Counter() {
+  // Declare a state variable "count" and a function "setCount" to update it
+  const [count, setCount] = useState(0);
+
+  return (
+    <div className="flex flex-col items-center p-4">
+      <h1 className="text-2xl font-bold mb-2">Counter: {count}</h1>
+      <button 
+        onClick={() => setCount(count + 1)} 
+        className="px-4 py-2 bg-blue-500 text-white rounded-lg"
+      >
+        Increment
+      </button>
+    </div>
+  );
+
+
+useState(0) initializes the state variable count with 0.
+setCount is a function used to update count.
+Clicking the button updates count by increasing it by 1.
+
+
+Events
+
+import React from 'react';
+
+export function App(props) {
+  const handleClick = () => {
+    alert('hi');
+  }
+}
+
+return (
+  <div className='App'>
+    <button onClick={handleClick}>Hey</button>
+  </div>
+)
+
+
