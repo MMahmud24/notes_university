@@ -59,26 +59,8 @@ const Homepage = () => {
             <button type="submit" className="btn btn-accent ml-2">Search</button>
             </form>
 
-            <div className="mt-6">
-              <h2 className="text-xl font-semibold text-white mb-2">Or select from popular universities:</h2>
-              <div className="flex flex-wrap justify-center gap-4">
-                {universities.map((uni) => (
-                  <button
-                    key={uni._id}
-                    className="btn btn-outline btn-info"
-                    onClick={() => navigate(`/notes?universityId=${uni._id}`)}
-                  >
-                    {uni.name}
-                  </button>
-                ))}
-              </div>
-          </div>
-            {/* Display search result */}
-            {university && (
-              <p className="mt-2 text-lg text-gray-300">
-                Searching for: <span className="font-bold">{university}</span>
-              </p>
-            )}
+
+            
           </div>
         </div>
       </div>
