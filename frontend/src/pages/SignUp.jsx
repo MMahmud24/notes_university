@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { signup } from "../api";
 import { AuthContext } from "../AuthContext";
 
-const Signup = () => {
+const SignUp = () => {
   const [form, setForm] = useState({ name: "", email: "", password: "" });
   const navigate = useNavigate();
   const { setUser } = useContext(AuthContext);
@@ -65,4 +65,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default SignUp;

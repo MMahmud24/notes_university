@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Notes from "./pages/Notes";
-import Signup from "./pages/Signup";
+import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import SavedNotes from "./pages/SavedNotes";
@@ -86,7 +86,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/notes" element={<Notes />} />
-            <Route path="/signup" element={<Signup />} />
+            <Route path="/signup" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/saved-notes" element={<SavedNotes />} />
