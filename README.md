@@ -2,6 +2,7 @@
 
 Notes University is a full-stack web application designed to help university students search, upload, manage, and collaborate around class notes across a growing network of 100+ universities. The platform allows authenticated users to securely upload academic notes, interact with materials via upvotes, downvotes, comments, and replies, while offering features like profile management and personal saved notes collections.
 
+<a href="https://notes-university-frontend.onrender.com">Link To Website</a>
 
 ## Video Walkthrough
 
