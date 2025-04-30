@@ -35,7 +35,7 @@ const upload = multer({ storage });
 // Upload a note
 router.post("/", verifyToken, upload.single("note"), async (req, res) => {
   const { university, classId } = req.body;
-  const noteURL = `/uploads/${req.file.filename}`;
+  const noteURL = `${process.env.BASE_URL}/uploads/${req.file.filename}`;
 
   const newNote = new Note({
     university,
